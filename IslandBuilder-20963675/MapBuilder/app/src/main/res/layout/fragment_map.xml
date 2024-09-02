@@ -1,0 +1,36 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- RecyclerView for the map -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mapRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Button positioned in the bottom-right corner -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Remove button -->
+        <Button
+            android:id="@+id/removeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:text="Remove" />
+
+        <!-- Regenerate button positioned just above the Remove button -->
+        <Button
+            android:id="@+id/regenerateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/removeButton"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="16dp"
+            android:text="Regenerate" />
+    </RelativeLayout>
+</FrameLayout>
